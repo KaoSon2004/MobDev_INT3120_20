@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Donate"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/darker_gray"
+        ></Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total So Far $1998"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="30sp"
+        android:textSize="20sp"
+        ></TextView>
+</LinearLayout>
