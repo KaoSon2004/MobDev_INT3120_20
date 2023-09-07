@@ -19,4 +19,6 @@
         android:layout_marginLeft="30sp"
         android:textSize="20sp"
         ></TextView>
+
+
 </LinearLayout>
