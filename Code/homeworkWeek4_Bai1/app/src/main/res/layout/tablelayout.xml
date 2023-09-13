@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TableRow>
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Homer"
+            android:textSize="30sp"
+            android:layout_marginBottom="20sp"
+            android:layout_span="2" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Give Generously"
+            android:textSize="20sp"
+            android:id="@+id/radioHeader"
+            android:layout_span="2" />
+    </TableRow>
+
+    <TableRow>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paypal" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Direct" />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow
+        android:gravity="right"
+        >
+        <NumberPicker
+            android:id="@+id/numberPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end" />
+    </TableRow>
+
+    <TableRow>
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:progress="30"
+
+            android:id="@+id/progressBar" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount" />
+        <EditText
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText" />
+    </TableRow>
+
+    <TableRow
+        android:gravity="center_horizontal"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donate"
+            android:textColor="@color/black"
+            android:backgroundTint="@android:color/darker_gray"
+            android:id="@+id/donateBtn" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total So Far $1998"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp" />
+    </TableRow>
+
+
+
+    <TableRow
+        android:gravity="right"
+        >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+
+            android:layout_margin="16dp"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:src="@drawable/baseline_email_24" />
+    </TableRow>
+
+</TableLayout>
