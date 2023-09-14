@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+
+    >
+
+    <TableRow>
+        <EditText
+            android:id="@+id/edittext1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name" />
+    </TableRow>
+
+    <TableRow>
+        <EditText
+            android:id="@+id/edittext2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your phone number" />
+    </TableRow>
+
+    <TableRow
+
+        >
+        <RadioGroup
+            android:id="@+id/radiogroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cheese" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 x Cheese" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="None" />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow>
+        <RadioGroup
+            android:id="@+id/radiogroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Square" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Round" />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow android:layout_width="match_parent" android:orientation="horizontal">
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Pepperoni"
+            android:layout_weight="1"
+            />
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Mushroom"
+            android:layout_weight="1"
+            />
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Veggies"
+            android:layout_weight="1"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Ordering" />
+    </TableRow>
+
+    <TableRow>
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/textarea"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:inputType="text|textMultiLine"
+            android:gravity="top"
+            android:background="#ccc" />
+    </TableRow>
+    <TableLayout
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        >
+        <TableRow>
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EXIT"
+                android:backgroundTint="#ccc"
+                android:layout_column="0"
+                android:layout_span="1"
+                />
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMS-PLACE YOUR ORDER"
+                android:backgroundTint="#ccc"
+                android:layout_column="1"
+                android:layout_span="1"
+                />
+        </TableRow>
+    </TableLayout>
+
+
+</TableLayout>
